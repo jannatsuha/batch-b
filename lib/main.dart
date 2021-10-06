@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     btnClr1=Colors.red;
 
-                    btnText="Picture is visible now";
+                    btnText="Picture is visible nowwww";
                     pictureVisibility=true;
                   });
               }),
