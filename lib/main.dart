@@ -3,13 +3,10 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-String btnText="Button 1";
-String btnText2="Button 2";
-String btnText3="Button 3";
+String btnText="Click to see picture";
+bool pictureVisibility=false;
 
 Color btnClr1= Colors.lightGreen;
-Color btnClr2= Colors.lightGreen;
-Color btnClr3= Colors.lightGreen;
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -38,22 +35,33 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         title: Text("My First App"),
       ),
-      body: Container(
+      body: SingleChildScrollView(
         child: Align(
 
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(
+                height: 10,
+              ),
               RaisedButton(
                 child: Text(btnText,style:TextStyle(color: Colors.white),),
                 color: btnClr1,
                   onPressed: (){
                   setState(() {
                     btnClr1=Colors.red;
-                    btnText="Button Pressed";
+                    btnText="Picture is visible now";
+                    pictureVisibility=true;
                   });
               }),
+              SizedBox(
+                height: 10,
+              ),
+              Visibility(
+                visible: pictureVisibility,
+                  child: Image.network("https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_960_720.jpg"))
+              ,
 
             ],
           ),
