@@ -51,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: (){
                   setState(() {
                     btnClr1=Colors.red;
+
                     btnText="Picture is visible now";
                     pictureVisibility=true;
                   });
