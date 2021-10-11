@@ -5,6 +5,9 @@ void main() {
 }
 String btnText="Click to see picture";
 bool pictureVisibility=false;
+String img1Src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_960_720.jpg";
+double imgHeight=200;
+double imgWidth=250;
 
 Color btnClr1= Colors.lightGreen;
 
@@ -31,14 +34,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar:
+      AppBar(
         centerTitle: true,
         title: Text("My First App"),
       ),
       body: SingleChildScrollView(
-        child: Align(
+        child:
+        Align(
 
-          child: Column(
+          child:
+          Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -61,8 +67,353 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Visibility(
                 visible: pictureVisibility,
-                  child: Image.network("https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_960_720.jpg"))
-              ,
+                  child:
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.amberAccent,
+                                width: 5
+                              )
+                            ),
+                            height: imgHeight,
+                              width: imgWidth,
+                              child: Image.network(img1Src,
+                                fit: BoxFit.cover,)
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Colors.amberAccent,
+                                      width: 5
+                                  )
+                              ),
+                              height: imgHeight,
+                              width: imgWidth,
+                              child: Image.network(img1Src,
+                                fit: BoxFit.cover,)
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Colors.amberAccent,
+                                      width: 5
+                                  )
+                              ),
+                              height: imgHeight,
+                              width: imgWidth,
+                              child: Image.network(img1Src,
+                                fit: BoxFit.cover,)
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Colors.amberAccent,
+                                      width: 5
+                                  )
+                              ),
+                              height: imgHeight,
+                              width: imgWidth,
+                              child: Image.network(img1Src,
+                                fit: BoxFit.cover,)
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color: Colors.amberAccent,
+                                      width: 5
+                                  )
+                              ),
+                              height: imgHeight,
+                              width: imgWidth,
+                              child: Image.network(img1Src,
+                                fit: BoxFit.cover,)
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+              ),
+              Visibility(
+                visible: pictureVisibility,
+                child:
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+              ),
+              Visibility(
+                visible: pictureVisibility,
+                child:
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+              ),
+              Visibility(
+                visible: pictureVisibility,
+                child:
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                                border: Border.all(
+                                    color: Colors.amberAccent,
+                                    width: 5
+                                )
+                            ),
+                            height: imgHeight,
+                            width: imgWidth,
+                            child: Image.network(img1Src,
+                              fit: BoxFit.cover,)
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+              ),
+              //Image.asset("assets/images/img2.jpg")
 
             ],
           ),
