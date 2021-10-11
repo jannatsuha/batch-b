@@ -1,3 +1,4 @@
+import 'package:batch_b/second_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -48,6 +49,10 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             //crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              RaisedButton(onPressed:(){
+                Navigator.push(context, MaterialPageRoute
+                  (builder: (context)=>SecondPage()));
+              }),
               SizedBox(
                 height: 10,
               ),
